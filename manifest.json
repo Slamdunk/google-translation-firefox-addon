@@ -3,7 +3,7 @@
     "name": "Google Translation",
     "description": "Google Translation by Slam",
     "author": "Slam",
-    "version": "2.5",
+    "version": "2.6",
     "background": {
         "scripts": [
             "background.js"
