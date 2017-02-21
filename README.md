@@ -1,4 +1,4 @@
-# google-translation-firefox-plugin
+# google-translation-firefox-addon
 
 [![Build Status][ci-img]][ci]
 [![AMO Latest version][amo-v-img]][amo]
