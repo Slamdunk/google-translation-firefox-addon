@@ -1,0 +1,19 @@
+{
+    "author": {
+        "name": "Filippo Tessarotto",
+        "email": "zoeslam@gmail.com",
+        "url": "https://github.com/Slamdunk/"
+    },
+    "license": "MIT",
+    "repository": "Slamdunk/stylelint-no-browser-hacks",
+    "bugs": {
+        "url": "https://github.com/Slamdunk/stylelint-no-browser-hacks/pulls"
+    },
+    "homepage": "https://github.com/Slamdunk/stylelint-no-browser-hacks",
+    "devDependencies": {
+        "eslint": "^3.16.0"
+    },
+    "scripts": {
+        "lint": "eslint ."
+    }
+}
