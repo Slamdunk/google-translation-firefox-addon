@@ -5,11 +5,11 @@
         "url": "https://github.com/Slamdunk/"
     },
     "license": "MIT",
-    "repository": "Slamdunk/stylelint-no-browser-hacks",
+    "repository": "Slamdunk/google-translation-firefox-addon",
     "bugs": {
-        "url": "https://github.com/Slamdunk/stylelint-no-browser-hacks/pulls"
+        "url": "https://github.com/Slamdunk/google-translation-firefox-addon/issues"
     },
-    "homepage": "https://github.com/Slamdunk/stylelint-no-browser-hacks",
+    "homepage": "https://github.com/Slamdunk/google-translation-firefox-addon",
     "devDependencies": {
         "eslint": "^3.16.0"
     },
