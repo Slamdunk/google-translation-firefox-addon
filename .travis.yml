@@ -1,0 +1,12 @@
+language: node_js
+sudo: false
+cache:
+  directories:
+    - node_modules
+before_install:
+  - npm prune
+  - npm update
+script:
+  - npm run lint
+notifications:
+  email: false
