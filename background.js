@@ -9,7 +9,7 @@ var goToGoogleTranslate = function(data) {
     }
 
     browser.tabs.create({
-        url: "https://translate.google.com/#" + fromLang + "/" + toLang + "/" + text
+        url: "https://translate.google.com/#view=home&op=translate&sl=" + fromLang + "&tl=" + toLang + "&text=" + text
     });
 };
 
