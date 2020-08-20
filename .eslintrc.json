@@ -27,6 +27,7 @@
         "operator-linebreak": ["error", "before"],
         "padded-blocks": ["error", "never"],
         "prefer-arrow-callback": "off",
+        "prefer-destructuring": "off",
         "prefer-template": "off",
         "quote-props": "off",
         "quotes": ["error", "double"],
