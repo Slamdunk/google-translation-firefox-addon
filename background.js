@@ -10,6 +10,7 @@ var ccLangs = [
     "zh-CN",
     "zh-TW"
 ];
+
 if (toLang.includes("-") && !ccLangs.includes(toLang)) {
     toLang = toLang.split("-")[0];
 }
