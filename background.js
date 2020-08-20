@@ -5,7 +5,7 @@ var toLang = browser.i18n.getUILanguage();
 // (All other languages don't accept country code, as of Aug. 2020)
 var ccLangs = ["zh-CN", "zh-TW"];
 if (toLang.includes("-") && !ccLangs.includes(toLang)) {
-    toLang = toLang.split("-")[0];
+    [toLang] = toLang.split("-");
 }
 
 var goToGoogleTranslate = function(data) {
