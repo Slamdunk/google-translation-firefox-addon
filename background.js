@@ -1,6 +1,20 @@
 var googleTranslationBySlamId = "google-translation-by-slam";
 var fromLang = "auto";
 var toLang = browser.i18n.getUILanguage();
+
+/*
+ * Remove country code except for in zh-CN and zh-TW
+ * (All other languages don't accept country code, as of Aug. 2020)
+ */
+var ccLangs = [
+    "zh-CN",
+    "zh-TW"
+];
+
+if (toLang.includes("-") && !ccLangs.includes(toLang)) {
+    toLang = toLang.split("-")[0];
+}
+
 var goToGoogleTranslate = function(data) {
     var text = data.shift();
 
@@ -32,9 +46,12 @@ browser.contextMenus.onClicked.addListener(function(info, tab) {
         return;
     }
 
-    var executing = browser.tabs.executeScript(tab.id, {
-        code: "window.prompt(\"Text to translate (" + fromLang + " -> " + toLang + ")?\");"
-    });
+    var executing = browser.tabs.executeScript(
+        tab.id,
+        {
+            code: "window.prompt(\"Text to translate (" + fromLang + " -> " + toLang + ")?\");"
+        }
+    );
 
     executing.then(goToGoogleTranslate);
 });
